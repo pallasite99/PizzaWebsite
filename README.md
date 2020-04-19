@@ -8,11 +8,6 @@ Pizza Ordering web application in Java Servlets, JSP, HTML, CSS, JavaScript and 
 The project requires Apache Tomcat 8.5.xx and MySQL 5.7.xx (or above) to run.
 __________________________________________________________________________________________________
 
-Contents of zip file -
-  (1) .war file -- also includes Java sources.
-  (2) .sql file -- the MySQL script for replicating the database that we tested.
-  (3) .png images -- expected output from our tests.
-
 __________________________________________________________________________________________________
 
 To run the project the database needs to be setup -
