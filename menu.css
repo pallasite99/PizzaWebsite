@@ -1,0 +1,117 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+main {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	/*z-index: 1;*/
+	margin: 0;
+	padding: 0;
+	width: 75%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	overflow: scroll;
+}
+
+#cart-btn {
+	margin: 2px;
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	box-shadow: 0px 0px 0px -8px rgba(0, 0, 0, 0.9);
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	border: 1px solid #adadad6e;
+	background-color: #f3f3f3;
+}
+
+#cart-btn:hover {
+	cursor: pointer;
+	background-color: #76d832;
+	user-select: none;
+}
+
+.card {
+	margin: 20px 10px 20px 10px;
+	display: grid;
+	grid-template-columns: 280px;
+	grid-template-rows: 210px 50px 120px;
+	grid-template-areas: "image" "name" "details";
+	border-radius: 18px;
+	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.9);
+	text-align: center;
+	transition: all 0.2s ease-out;
+	background-color: #ffffff;
+}
+
+.card-image {
+	grid-area: image;
+	background-size: cover;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+        /*overflow: hidden;*/
+}
+
+.card-name {
+	grid-area: name;
+}
+
+.card-details {
+	grid-area: details;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.qty {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.qty-num {
+	margin: 5px;
+	display: grid;
+	grid-template-columns: 30px;
+	grid-template-rows: 30px;
+	box-shadow: 2px 2px 5px -2px rgba(0, 0, 0, 0.9);
+	text-align: center;
+	line-height: 30px;
+	border-radius: 20%;
+	border: 1px solid #adadad6e;
+	background-color: #ffffff;
+	z-index: 2;
+}
+
+.qty-btn {
+	margin: 2px;
+	display: grid;
+	grid-template-columns: 90px;
+	grid-template-rows: 30px;
+	width: 100%;
+	box-shadow: 0px 0px 0px -8px rgba(0, 0, 0, 0.9);
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	border: 1px solid #adadad6e;
+	background-color: #f3f3f3;
+	visibility: visible;
+	transition: all 0.2s;
+}
+
+.qty-btn:hover {
+	cursor: pointer;
+	background-color: #f8a642;
+	user-select: none;
+}

@@ -1,0 +1,67 @@
+.cart {
+	position: absolute;
+	top: 60px;
+	right: 0px;
+	z-index: 1;
+	background-color: #f0f0f0ff;
+	margin: 5px 10px 0px 5px;
+	padding: 0;
+	width: 25%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 30px 240px 30px;
+	grid-template-areas: "." "cartitems" "cartactions";
+	align-items: center;
+	justify-content: center;
+	overflow: visible;
+}
+
+.cart-items {
+	grid-area: cartitems;
+	display: flex;
+	flex-direction: column;	
+}
+
+.cart-item {
+	margin: 5px 2px 5px 2px;
+	width: 100%;
+	height: 40px;
+	display: grid;
+	grid-template-columns: 55% 10% 15% 20%;
+	grid-template-rows: 40px;
+	grid-template-areas: "ciname ciqty ciprice ciamt";
+}
+
+.cart-item-name {
+	grid-area: ciname;
+}
+
+.cart-item-qty {
+	grid-area: ciqty;
+}
+
+.cart-item-price {
+	grid-area: ciprice;
+}
+
+.cart-item-amt {
+	grid-area: ciamt;
+}
+
+#clear-btn {
+	grid-area: cartactions;
+	margin: 2px;
+	box-shadow: 0px 0px 0px -8px rgba(0, 0, 0, 0.9);
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	border: 1px solid #adadad6e;
+	background-color: #f3f3f3;
+}
+
+#clear-btn:hover {
+	cursor: pointer;
+	background-color: #ef4529;
+	user-select: none;
+}

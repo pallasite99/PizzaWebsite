@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Online Pizza Ordering System</title>
+		<!--<base href="${pageContext.request.contextPath}">-->
+		<!-- Because of this base path all links with ../ have to be replaced by "" -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			$("#nav-placeholder").load("navbar.jsp");
+		});
+		</script>
+	</head>
+	<body>
+		<div id="nav-placeholder"></div>
+		
+		<article>
+			<img id="img1" src="img/pizzah.jfif" class="responsive">
+		</article>
+		
+		<div id="about">
+			<h1>ABOUT US</h1>
+			<article>
+			<section>
+				<p>The Super Pizza was founded in XYZ by Mr. Italiano himself in 2019. We offer a wide range of customized pizzas!</p>
+				<p><strong>The Chef?</strong> Mr. Italiano himself</p>
+				<p>We are proud of our interiors.</p>
+				<h1><b>Opening Hours</b></h1>
+			</section>
+			<br>
+			<section>
+				<div class="row">
+					<div class="col">html/
+						<p>Mon &amp; Tue <strong>CLOSED</strong></p>
+						<p>Wednesday 10.00 - 00.00</p>
+						<p>Thursday 10:00 - 00:00</p>
+					</div>
+					<div class="col">
+						<p>Friday 10:00 - 12:00</p>
+						<p>Saturday 10:00 - 23:00</p>
+						<p>Sunday <strong>CLOSED</strong></p>
+					</div>
+				</div>
+			</section>
+			</article>
+		</div>
+		<div id="contact">
+			<h1>CONTACT</h1>
+		<article>
+			<section>
+				<p>Find us at some address at some place or call us at 9158xxxxxx</p>
+				<a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=superpizza@gmail.com" target="_blank">e-mail us here!</a>
+			</section>
+			<br />
+			<section>
+				<p><strong>FYI!</strong></p>
+				<p>We offer full-service catering for any event, large or small.</p>
+				<p>We understand your needs and we will cater the food to satisfy the biggest criteria of them all:</p>
+				<p>Both look and taste.</p>
+				<br />
+				<q>Excellent service and best quality!</q>
+				<br />
+			</section>
+		</article>
+		</div>
+		<div id="offers">
+			<center><h1>OUR OFFERS</h1></center>
+			<br>
+			<div class="coupon">
+			  <div class="container">
+			    <h3>Super Pizza</h3>
+			  </div>
+			  <img src="img/pizzah.jfif" alt="Avatar" style="width:50x;height:50px;">
+			  <div class="container" style="background-color:white">
+			    <h2><b>20% OFF YOUR PURCHASE</b></h2>
+			    <p>Valid on Wednesdays!</p>
+			  </div>
+			  <div class="container">
+			    <p>Use Promo Code: <span class="promo">BOH232</span></p>
+			    <p class="expire">Expires: Jan 20, 2020</p>
+			  </div>
+			</div>
+			<div class="coupon">
+			  <div class="container">
+			    <h3>Super Pizza</h3>
+			  </div>
+			  <img src="img/pizzah.jfif" alt="Avatar" style="width:50x;height:50px;">
+			  <div class="container" style="background-color:white">
+			    <h2><b>50% OFF FOR ORDERS ABOVE 1000</b></h2>
+			    <p>Valid all days!</p>
+			  </div>
+			  <div class="container">
+			    <p>Use Promo Code: <span class="promo">BOH2A2</span></p>
+			    <p class="expire">Expires: Jan 20, 2020</p>
+			  </div>
+			</div>
+			<div class="coupon">
+			  <div class="container">
+			    <h3>Super Pizza</h3>
+			  </div>
+			  <img src="img/pizzah.jfif" alt="Avatar" style="width:50x;height:50px;">
+			  <div class="container" style="background-color:white">
+			    <h2><b>FREE COKE WITH YOUR PIZZA</b></h2>
+			    <p>Valid on weekends!</p>
+			  </div>
+			  <div class="container">
+			    <p>Use Promo Code: <span class="promo">BOH2C2</span></p>
+			    <p class="expire">Expires: Jan 30, 2020</p>
+			  </div>
+			</div>
+		</div>
+		<section id="feedback">
+			<h1>FEEDBACK</h1>
+			<section>
+					<p>Help us serve you better!</p>
+					<form>
+					  <article id="question-1">
+						<label for="question-1">Were you able to navigate our site properly?</label><br>
+						<input type="radio" value="yes" name="choice-1" />Yes
+						<input type="radio" value="no" name="choice-1" />No
+						<hr>
+					  </article>
+					  <article id="question-2">
+						<label for="question-2">Will you visit our website again?</label><br>
+						<input type="radio" value="yes" name="choice-2" />Yes
+						<input type="radio" value="no" name="choice-2" />No
+						<input type="radio" value="maybe" name="choice-2" />Maybe
+						<hr>
+					  </article>
+					  <article id="question-3">
+						<label for="question-3">Will you recommend us to your friends/family?</label><br>
+						<input type="radio" value="yes" name="choice-3" />Yes
+						<input type="radio" value="no" name="choice-3" />No
+						<input type="radio" value="maybe" name="choice-3" />Maybe
+						<hr>
+					  </article>
+					  <article id="question-4">
+						<label for="question-4">Your valuable suggestions:</label><br>
+						<textarea rows="4" cols="50" name="comment" form="feedform"></textarea>
+					  </article>
+					  <br />
+					  <button id="feedbackBtn">Send Feedback</button>
+					</form>
+			</section>
+		</section>
+		<section>
+			Visitor count:
+		</section>
+		<div id="CounterVisitor">
+		</div>
+		
+		<script>
+		var n = localStorage.getItem('on_load_counter');
+		
+		if (n === null) {
+		  n = 0;
+		}
+		n++;
+		
+		localStorage.setItem("on_load_counter", n);
+		
+		nums = n.toString().split('').map(Number);
+		document.getElementById('CounterVisitor').innerHTML = '';
+		for (var i of nums) {
+		  document.getElementById('CounterVisitor').innerHTML += '<span class="counter-item">' + i + '</span>';
+		}
+		
+		</script>
+	</body>
+	<div id="sitemap">
+		<footer>
+		<small>
+			Designed and developed by:
+			31205, 31206, 31220.
+		</small>
+		<br />
+		<small>
+			&copy; 2020 Super Pizza - All rights reserved
+		</small>
+	</footer>
+	</div>
+</html>	
